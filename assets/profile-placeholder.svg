@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Foto profil">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f9c5d5"/>
+      <stop offset="100%" style="stop-color:#e8a4b8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#g)"/>
+  <text x="100" y="112" text-anchor="middle" font-family="Georgia, serif" font-size="52" fill="#fff" font-weight="600">LRJ</text>
+</svg>

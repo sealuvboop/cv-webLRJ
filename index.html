@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Curriculum Vitae — Lulu Raudlatul Jannah, Mahasiswa Manajemen UMY" />
+  <title>CV — Lulu Raudlatul Jannah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container" id="cv-content">
+
+    <!-- ===== Hero ===== -->
+    <header class="hero fade-in">
+      <div class="profile-wrap">
+        <span class="profile-ring" aria-hidden="true"></span>
+        <img
+          id="profile-photo"
+          class="profile-photo"
+          src="assets/profile.jpg"
+          alt="Foto profil Lulu Raudlatul Jannah"
+          width="148"
+          height="148"
+        />
+      </div>
+      <h1>Lulu Raudlatul Jannah</h1>
+      <p class="role">Mahasiswa S1 Manajemen · Universitas Muhammadiyah Yogyakarta</p>
+      <p class="location">Yogyakarta (dekat Balai Kota) · Lahir 19 Agustus 2005</p>
+      <div class="hero-actions">
+        <button type="button" class="btn-download" id="btn-download-pdf" aria-label="Unduh CV sebagai PDF">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          Download CV (PDF)
+        </button>
+        <a href="cv-singkat.html" class="btn-outline">CV Singkat + Barcode</a>
+      </div>
+    </header>
+
+    <!-- ===== About ===== -->
+    <section class="section fade-in" id="about">
+      <h2 class="section-title">Tentang Saya</h2>
+      <p class="about-text">
+        Saya mahasiswa Manajemen yang terbiasa mengolah data, merapikan laporan di Microsoft Excel
+        dengan rumus, serta mengelola administrasi operasional. Berpengalaman magang di BPBD,
+        input pajak melalui DJP Online, dan pengelolaan stok serta utang di usaha keluarga.
+        Memiliki sertifikat di bidang kewirausahaan dan public speaking, dengan minat pada
+        pekerjaan administrasi, keuangan, dan operasional bisnis.
+      </p>
+      <div class="cert-list" aria-label="Sertifikat">
+        <span>Praktisi Kewirausahaan</span>
+        <span>Public Speaking</span>
+        <span>Entrepreneurship</span>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section class="section fade-in" id="education">
+      <h2 class="section-title">Pendidikan</h2>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <h3>S1 Manajemen</h3>
+          <p class="place">Universitas Muhammadiyah Yogyakarta</p>
+          <p class="period">Sedang berkuliah</p>
+          <p>Memfokuskan diri pada manajemen operasional, administrasi, dan pengembangan keterampilan praktis di dunia kerja.</p>
+        </li>
+        <li class="timeline-item">
+          <h3>SMA</h3>
+          <p class="place">SMA Muhammadiyah 2 Yogyakarta</p>
+          <p class="period">Pendidikan terakhir sebelum kuliah</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section fade-in" id="experience">
+      <h2 class="section-title">Pengalaman</h2>
+      <ul class="timeline">
+        <li class="timeline-item">
+          <h3>Magang — BPBD</h3>
+          <p class="place">Badan Penanggulangan Bencana Daerah</p>
+          <ul>
+            <li>Menggunakan aplikasi/sistem yang dipakai di lingkungan BPBD selama masa magang.</li>
+            <li>Terbiasa dengan prosedur administrasi dan kerja tim di instansi pemerintah.</li>
+          </ul>
+        </li>
+        <li class="timeline-item">
+          <h3>Administrasi &amp; Stok — Usaha Toko (Keluarga)</h3>
+          <p class="place">Pengelolaan barang masuk &amp; utang benang karyawan</p>
+          <ul>
+            <li>Mencatat dan menginput data barang masuk ke sistem penyimpanan toko.</li>
+            <li>Mengatur storage agar data barang tertata dan mudah dilacak.</li>
+            <li>Mencatat utang benang yang diambil karyawan untuk keperluan produksi.</li>
+          </ul>
+        </li>
+        <li class="timeline-item">
+          <h3>Input Pajak — DJP Online</h3>
+          <p class="place">Administrasi perpajakan</p>
+          <ul>
+            <li>Melakukan input data pajak melalui layanan DJP Online sesuai kebutuhan usaha/keluarga.</li>
+          </ul>
+        </li>
+        <li class="timeline-item">
+          <h3>Pengolahan Data — Excel</h3>
+          <p class="place">Keunggulan utama</p>
+          <ul>
+            <li>Merapikan data dan laporan menggunakan rumus Excel agar efisien dan minim kesalahan.</li>
+            <li>Menyusun tabel rekap untuk kebutuhan akademik maupun operasional harian.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section fade-in" id="skills">
+      <h2 class="section-title">Keahlian</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-header">
+            <span class="skill-name">Microsoft Excel (rumus &amp; laporan)</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 90%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <span class="skill-name">Manajemen stok &amp; storage</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 85%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <span class="skill-name">Input pajak DJP Online</span>
+            <span class="skill-percent">78%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 78%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <span class="skill-name">Aplikasi BPBD (magang)</span>
+            <span class="skill-percent">72%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 72%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <span class="skill-name">Public speaking</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 75%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-header">
+            <span class="skill-name">Kewirausahaan</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" style="--level: 80%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section fade-in" id="contact">
+      <h2 class="section-title">Kontak</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="contact-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </span>
+          <div>
+            <strong>Email</strong>
+            <a id="contact-email" href="mailto:emailanda@example.com">emailanda@example.com</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </span>
+          <div>
+            <strong>WhatsApp</strong>
+            <a id="contact-wa" href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer">+62 8xx-xxxx-xxxx</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </span>
+          <div>
+            <strong>Domisili</strong>
+            <span>Yogyakarta (Kota), dekat Balai Kota</span>
+          </div>
+        </div>
+      </div>
+
+      <nav class="social-links" aria-label="Media sosial">
+        <a id="social-instagram" href="#" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <a id="social-linkedin" href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </nav>
+    </section>
+
+    <footer class="footer fade-in">
+      <p>&copy; 2026 Lulu Raudlatul Jannah · Curriculum Vitae</p>
+    </footer>
+  </main>
+</body>
+</html>
